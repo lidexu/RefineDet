@@ -95,6 +95,7 @@ LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/
 # If Homebrew is installed at a non standard location (for example your home directory) and you use it for general dependencies
 # INCLUDE_DIRS += $(shell brew --prefix)/include
 # LIBRARY_DIRS += $(shell brew --prefix)/lib
+LIBRARIES += glog gflags protobuf leveldb snappy \ lmdb boost_system hdf5_hl hdf5 m \ opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs
 
 # NCCL acceleration switch (uncomment to build with NCCL)
 # https://github.com/NVIDIA/nccl (last tested version: v1.2.3-1+cuda8.0)
